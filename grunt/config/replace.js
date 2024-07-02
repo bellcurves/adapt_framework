@@ -66,6 +66,12 @@ module.exports = function(grunt, options) {
         spoor._advancedSettings._manifestIdentifier = spoor._advancedSettings._manifestIdentifier || 'adapt_manifest';
       }
 
+      const spoorBC = configJson._bcSpoor;
+      if (spoorBC) {
+        spoorBC._advancedSettings = spoorBC._advancedSettings || {};
+        spoorBC._advancedSettings._manifestIdentifier = spoorBC._advancedSettings._manifestIdentifier || 'adapt_manifest';
+      }
+
       // Combine the course, config and build JSON to pass to replace.
       return {
         course: filterNullValues(courseJson),

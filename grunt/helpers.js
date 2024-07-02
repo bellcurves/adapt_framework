@@ -167,7 +167,8 @@ module.exports = function(grunt) {
       ],
       scriptSafe: [
         'adapt-contrib-xapi',
-        'adapt-contrib-spoor'
+        'adapt-contrib-spoor',
+        'adapt-bc-spoor'
       ]
     },
 
